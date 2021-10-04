@@ -1,1 +1,128 @@
-portfolio-item-java.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- to look good in all screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susana Ruiz Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/867359e752.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/susanaruiz.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+     <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+           Working with <strong>Java</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">My first love</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/splash_assets/img/portfolio-01.jpg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>I am an enthusiastic Java Developer who for several years have been using Java Technologies for development, integration and testing applications. I have good experience in building and deploying applications on Web/Application Servers like JBoss and Tomcat.</p>
+        <img src="<?php echo get_template_directory_uri(); ?>/splash_assets/img/portfolio-details-java.jpg" alt="">
+        <p>I have worked in a large range of environments from large  corporations, family businesses to startups. For this reason I am experienced in all phases and levels of the software development life cycle from design to implementation from UI to backend.</p>
+        <p>I had the opportunity to develop software with J2EE, JSPs, Servlets, EJBs, Hibernate, Struts, Git, SVN, Spring, Tomcat 5, JBoss, and different databases. I am a Sun Certified Java Programmer (SCJP). Still growing my Java skills!</p>
+    </div>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle">What I do best</p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01  -->
+            <a href="portfolio-item-java.html" class="portfolio__item">
+                <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 02  -->
+            <a href="portfolio-item-web.html" class="portfolio__item">
+                <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 03  -->
+            <a href="portfolio-item-ruby.html" class="portfolio__item">
+                <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 04  -->
+            <a href="portfolio-item-otherIT.html" class="portfolio__item">
+                <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 05  -->
+            <a href="portfolio-item-javascript.html" class="portfolio__item">
+                <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio item 06  -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="footer">
+        <a href="mailto:hello@susanaruiztech.com" class="footer__link" target="_blank">hello@susanaruiztech.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Duende13" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com/srcd13" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io/duende13" target="_blank">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.freecodecamp.org/duende13" target="_blank">
+                    <i class="fab fa-free-code-camp"></i>
+                </a>
+            </li>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="./docs/Susana_Ruiz_Full_Stack_Developer.pdf" target="_blank">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

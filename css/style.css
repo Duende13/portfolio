@@ -53,6 +53,9 @@ body {
 section {
     padding: 5em 2em;
 }
+.blog{
+    padding: 1em 2em;
+}
 
 img {
     display: block;
@@ -313,6 +316,7 @@ header {
 .service {
     max-width:  500px;
     margin: 0 auto;
+    text-align: left;
 }
 
 @media(min-width: 800px){
@@ -375,7 +379,9 @@ header {
     color: var(--clr-light);
     text-align: center;
 }
-
+.my-work .section__subtitle {
+	margin-bottom: 1em;
+}
 .portfolio{
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -462,6 +468,16 @@ header {
     margin-right: auto;
 }
 
+/* blog */
+.blog__link {
+    text-decoration: none;
+}
+.tags-links{
+	display: none;
+}
+.cat-links{
+	display: none !important;
+}
 
 
 
